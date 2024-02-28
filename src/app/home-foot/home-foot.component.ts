@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-foot.component.css']
 })
 export class HomeFootComponent {
+  showElements: boolean = true;
+
+  toggleVisibility() {
+    this.showElements = !this.showElements;}
 
 }

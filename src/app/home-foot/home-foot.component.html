@@ -1,1 +1,33 @@
-<p>home-foot works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title> OFFICIAL PAGE</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+ 
+                        
+
+              <div  *ngIf="showElements" class="register" id="register">
+                <p>Don't have a account <button  (click)="toggleVisibility()"routerLink="/registre" > Register</button> </p>
+            </div>
+            <br>
+            <div  *ngIf="showElements" class="register" id="login">
+                <p>If you have an account log in <button (click)="toggleVisibility()" routerLink="/login" > log in</button> </p>
+            </div>
+
+
+            </div>
+           
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+
+</body>
+</html>

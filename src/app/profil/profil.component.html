@@ -1,0 +1,39 @@
+
+<div class="fut-player-card">
+  <div class="player-card-top">
+    <div class="player-master-info">
+      <div class="player-rating">
+        <span>{{ player.rating }}</span>
+      </div>
+      <div class="player-position">
+        <span>{{ player.position }}</span>
+      </div>
+      <div class="player-nation">
+        <img [src]="player.nationImageUrl" alt="Nation" draggable="false" />
+      </div>
+      <div class="player-club">
+        <img [src]="player.clubImageUrl" alt="Club" draggable="false" />
+      </div>
+    </div>
+    <div class="player-picture">
+      <img [src]="player.playerImageUrl" alt="Player" draggable="false" />
+      <div class="player-extra">
+      </div>
+    </div>
+  </div>
+  <div class="player-card-bottom">
+    <div class="player-info">
+      <div class="player-name">
+        <span>{{ player.name }}</span>
+      </div>
+      <div class="player-features">
+        <div class="player-features-col">
+          <span>
+            <div class="player-feature-value"></div>
+            <div class="player-feature-title">PAC</div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

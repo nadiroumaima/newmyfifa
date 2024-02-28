@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(59, 55, 18);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px; /* Adjust the gap as needed */
+  justify-content: center; /* Center the grid items horizontally */
+  align-items: center; /* Center the grid items vertically */
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.grid-item {
+  flex: 0 0 30%; /* Adjust the width as needed */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Increase box shadow for a more prominent effect */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  overflow: hidden; /* Hide overflowing content */
+}
